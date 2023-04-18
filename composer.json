@@ -15,8 +15,5 @@
         "psr-4": {
             "squlio\\SqulioApi\\": "src/"
         }
-    },
-    "require-dev": {
-        "squlio/squlio-api": "dev-master"
     }
 }
