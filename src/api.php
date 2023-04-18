@@ -25,7 +25,7 @@ class Api
             ]
         ]);
 
-        $response = $client->get('/v1/users?token=' . $userId);
+        $response = $client->get('/v1/users');
 
         return json_decode($response->getBody(), true);
     }
