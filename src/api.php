@@ -15,7 +15,7 @@ class Api
         $this->apiKey = $apiKey;
     }
 
-    public function getUser($userId)
+    public function getUser()
     {
         $client = new Client([
             'base_uri' => $this->baseUrl,
