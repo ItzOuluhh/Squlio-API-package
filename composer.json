@@ -2,6 +2,7 @@
     "name": "squlio/squlio-api",
     "description": "De officiele package voor het gebruiken van de Squlio API!",
     "version": "1.0.0",
+    "license": "MIT",
     "authors": [
         {
             "name": "Ole Welling",
