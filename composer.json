@@ -2,6 +2,12 @@
     "name": "squlio/squlio-api",
     "description": "De officiele package voor het gebruiken van de Squlio API!",
     "version": "1.0.0",
+    "authors": [
+        {
+            "name": "Ole Welling",
+            "email": "info@itzole.nl"
+        }
+    ],
     "require": {
         "guzzlehttp/guzzle": "^7.0"
     },
