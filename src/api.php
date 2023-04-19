@@ -1,24 +1,21 @@
 <?php
 
 namespace squlioApi;
-
 use GuzzleHttp\Client;
 
 class Api
 {
-    protected $baseUrl;
     protected $apiKey;
 
-    public function __construct($baseUrl, $apiKey)
+    public function __construct($apiKey)
     {
-        $this->baseUrl = $baseUrl;
         $this->apiKey = $apiKey;
     }
 
     public function getUser()
     {
         $client = new Client([
-            'base_uri' => $this->baseUrl,
+            'base_uri' => 'https://api.squlio.nl/',
             'headers' => [
                 'Authorization' => 'Bearer ' . $this->apiKey,
                 'Accept' => 'application/json',
