@@ -15,14 +15,14 @@ class Api
     public function getUser()
     {
         $client = new Client([
-            'base_uri' => 'https://api.squlio.nl/',
+            'base_uri' => 'https://api.squlio.nl/v1',
             'headers' => [
-                'Authorization' => 'Bearer ' . $this->apiKey,
+                'Authorization' => $this->apiKey,
                 'Accept' => 'application/json',
             ]
         ]);
 
-        $response = $client->get('/v1/users');
+        $response = $client->get('/users');
 
         return json_decode($response->getBody(), true);
     }
