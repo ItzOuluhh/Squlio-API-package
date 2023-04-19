@@ -1,6 +1,6 @@
 <?php
 
-namespace SqulioApi;
+namespace squlioApi;
 
 use GuzzleHttp\Client;
 

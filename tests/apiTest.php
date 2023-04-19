@@ -1,10 +1,10 @@
 <?php
 
-namespace SqulioApi;
+namespace apiBeta;
 
 use GuzzleHttp\Client;
 
-class Api
+class betaApi
 {
     protected $baseUrl;
     protected $apiKey;
@@ -25,7 +25,7 @@ class Api
             ]
         ]);
 
-        $response = $client->get('/v1/users');
+        $response = $client->get('/v1/roosters');
 
         return json_decode($response->getBody(), true);
     }
