@@ -1,23 +1,21 @@
 {
     "name": "squlio/squlio-api",
-    "description": "De officiele package voor het gebruiken van de Squlio API!",
-    "version": "1.2.1",
-    "license": "MIT",
+    "description": "Officieele package voor de squlio API",
     "type": "library",
+    "license": "MIT",
     "authors": [
         {
             "name": "Ole Welling",
             "email": "info@itzole.nl"
         }
     ],
-    "minimum-stability": "dev",
-    "prefer-stable": true,
+    "autoload": {
+        "psr-4": {
+            "Squlio\\SqulioApi\\": "src/"
+        }
+    },
     "require": {
         "guzzlehttp/guzzle": "^7.0"
     },
-    "autoload": {
-        "psr-4": {
-            "squlio\\SqulioApi\\": "src/"
-        }
-    }
+    "minimum-stability": "stable"
 }
